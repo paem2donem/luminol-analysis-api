@@ -6,6 +6,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg') # Sunucu ortamı için GUI kapatma
 import matplotlib.pyplot as plt
+plt.switch_backend('Agg')  # RAM dostu, arayüzsüz grafik motoru
 import flask # Sonsuz döngüyü engellemek için doğrudan import
 from flask import Flask, request, jsonify
 from flask_cors import CORS  
