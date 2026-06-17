@@ -97,7 +97,7 @@ def analiz_et():
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
         ax.grid(True, linestyle='--', alpha=0.3, which='both')
-        ax.legend(frameon=False, fontsize=9, loc='upper right')
+        #ax.legend(frameon=False, fontsize=9, loc='upper right')
 
         graph_filename = f"{video_filename}_Q1_Analysis.png"
         graph_path = os.path.join(UPLOAD_FOLDER, graph_filename)
