@@ -127,7 +127,10 @@ def analiz_et():
     except Exception as e:
         if os.path.exists(video_path):
             os.remove(video_path)
-        return jsonify({"status": "error", "message": str(e)}), 500
+        # Hata Önleme: Hatayı gizlemek yerine tam adını ekrana basalım
+        import traceback
+        hata_detayi = traceback.format_exc()
+        return jsonify({"status": "error", "message": str(e), "details": hata_detayi}), 500
 
 @app.route('/grafik/<filename>', methods=['GET'])
 def grafik_getir(filename):
