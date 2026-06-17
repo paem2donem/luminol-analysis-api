@@ -104,7 +104,7 @@ def analiz_et():
         graph_filename = f"{video_filename}_Q1_Analysis.png"
         graph_path = os.path.join(UPLOAD_FOLDER, graph_filename)
         plt.savefig(graph_path, dpi=300, bbox_inches='tight')
-        plt.close()
+        plt.close('all')
 
         analysis_end = time.time()
         elapsed_total_seconds = analysis_end - analysis_start
@@ -146,3 +146,5 @@ def grafik_getir(filename):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
+
+
