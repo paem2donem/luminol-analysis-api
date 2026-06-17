@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 import flask # Sonsuz döngüyü engellemek için doğrudan import
 from flask import Flask, request, jsonify
 from flask_cors import CORS  
-import matplotlib
-matplotlib.use('Agg')  # RAM dostu, arayüzsüz grafik motoru
 
 app = Flask(__name__)
 CORS(app)  # Tüm tarayıcılardan gelen isteklere izin verir (CORS engeli baypas edilir)
