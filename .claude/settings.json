@@ -1,0 +1,8 @@
+{
+  "extraKnownMarketplaces": {
+    "paem2donem-council": {
+      "source": { "source": "github", "repo": "paem2donem/llm-council-skill" }
+    }
+  },
+  "enabledPlugins": { "llm-council@paem2donem-council": true }
+}
